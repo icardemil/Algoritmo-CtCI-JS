@@ -9,12 +9,11 @@ const urlify = (string) => {
   return str1.join("");
 };
 
-//console.log(urlify("Hola mundo        "));
-//console.log(urlify("Mr John Smith"));
+console.log(urlify("Hola mundo        "));
+console.log(urlify("Mr John Smith"));
 
 //Cadenas con muchos espacios en todas partes 🐱‍👓
 const urlifyW = (string) => {
-  const reg = "s ";
   const str2 = string.trim().replace(/\s+/g, "%20");
   return str2;
 };
